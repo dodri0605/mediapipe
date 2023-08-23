@@ -335,6 +335,8 @@ class HandLandmarkerHelper(
         val finishTimeMs = SystemClock.uptimeMillis()
         val inferenceTime = finishTimeMs - result.timestampMs()
 
+        Log.d(TAG, "returnLivestreamResult: ${listOf(result)}")
+
         handLandmarkerHelperListener?.onResults(
             ResultBundle(
                 listOf(result),

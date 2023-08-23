@@ -48,4 +48,9 @@
         android:id="@+id/gallery_fragment"
         android:name="com.google.mediapipe.examples.handlandmarker.fragment.GalleryFragment"
         android:label="GalleryFragment" />
+
+    <fragment
+        android:id="@+id/web_fragment"
+        android:name="com.google.mediapipe.examples.handlandmarker.fragment.WebFragment"
+        android:label="WebFragment" />
 </navigation>

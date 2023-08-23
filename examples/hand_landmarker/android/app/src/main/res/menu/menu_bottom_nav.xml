@@ -24,4 +24,9 @@
         android:id="@id/gallery_fragment"
         android:icon="@drawable/ic_baseline_photo_library_24"
         android:title="@string/menu_gallery" />
+
+    <item
+        android:id="@id/web_fragment"
+        android:icon="@drawable/world_wide_web_svgrepo_com"
+        android:title="@string/menu_web" />
 </menu>
