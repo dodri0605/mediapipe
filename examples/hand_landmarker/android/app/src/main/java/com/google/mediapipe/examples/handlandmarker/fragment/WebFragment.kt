@@ -35,6 +35,6 @@ class WebFragment : Fragment() {
         fragmentWebBinding.webView.settings.allowUniversalAccessFromFileURLs = true
         fragmentWebBinding.webView.settings.loadWithOverviewMode = true
         fragmentWebBinding.webView.settings.mediaPlaybackRequiresUserGesture = false
-        fragmentWebBinding.webView.loadUrl("https://codepen.io/mediapipe-preview/full/gOKBGPN")
+        fragmentWebBinding.webView.loadUrl("file:///android_asset/handlandmark_web.html")
     }
 }

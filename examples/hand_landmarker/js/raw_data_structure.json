@@ -1,0 +1,23 @@
+{
+    "__comment__": "2023.08.25",
+    "userName": "Name",
+    "userAge": 20,
+    "userLevel": 5,
+    "songName": "Song Name",
+    "songArtist": "Song Artist",
+    "playVideoUrl": "Video File Path",
+    "playMidiUrl": "MIDI File Path",
+    "playHandData": [
+        {
+            "timestampMs": 1234,
+            "category": "Hand Category. ex) Left, Right",
+            "landmarks": [
+                {
+                    "x": 0.30011567,
+                    "y": 0.80766284,
+                    "z": 0.05326492
+                }
+            ]
+        }
+    ]
+}

@@ -25,7 +25,7 @@
                 <Normalized Landmark (x=0.31319168 y=0.05588311 z=-0.10640144)>, 
                 <Normalized Landmark (x=0.33338922 y=-0.0048517883 z=-0.11563796)>
             ]
-        ], 
+        ],
         worldLandmarks=[
             [
                 <Landmark (x=-0.04183677 y=0.0772645 z=0.017782439)>, 

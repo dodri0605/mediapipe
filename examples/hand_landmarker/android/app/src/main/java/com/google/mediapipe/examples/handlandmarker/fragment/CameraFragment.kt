@@ -16,6 +16,7 @@
 package com.google.mediapipe.examples.handlandmarker.fragment
 
 import android.annotation.SuppressLint
+import android.content.pm.PackageManager
 import android.content.res.Configuration
 import android.os.Bundle
 import android.util.Log
@@ -126,6 +127,8 @@ class CameraFragment : Fragment(), HandLandmarkerHelper.LandmarkerListener {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        Toast.makeText(requireActivity(), "External Camera: ${isSupportExternalCamera()}", Toast.LENGTH_SHORT).show()
+
         // Initialize our background executor
         backgroundExecutor = Executors.newSingleThreadExecutor()
 
@@ -151,6 +154,10 @@ class CameraFragment : Fragment(), HandLandmarkerHelper.LandmarkerListener {
 
         // Attach listeners to UI control widgets
         initBottomSheetControls()
+    }
+
+    private fun isSupportExternalCamera(): Boolean{
+        return requireActivity().packageManager.hasSystemFeature(PackageManager.FEATURE_CAMERA_EXTERNAL)
     }
 
     private fun initBottomSheetControls() {

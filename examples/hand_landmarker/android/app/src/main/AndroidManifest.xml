@@ -23,9 +23,12 @@
 
     <!-- Declare features -->
     <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.external" />
 
     <!-- Declare permissions -->
     <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-feature android:name="android.hardware.usb.host" />
 
     <application
         android:allowBackup="true"
@@ -35,6 +38,7 @@
         android:supportsRtl="true"
         android:taskAffinity=""
         android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
         tools:ignore="AllowBackup">
 
         <activity
